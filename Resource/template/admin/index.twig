@@ -34,6 +34,9 @@
                                     <th>{{ 'plugin_coupon.admin.index.col06'|trans }}</th>
                                     <th>{{ 'plugin_coupon.admin.index.col07'|trans }}</th>
                                     <th>{{ 'plugin_coupon.admin.index.col08'|trans }}</th>
+                                    <th>{{ 'plugin_coupon.admin.index.col13'|trans }}</th>
+                                    <th>{{ 'plugin_coupon.admin.index.col14'|trans }}</th>
+                                    <th>{{ 'plugin_coupon.admin.index.col15'|trans }}</th>
                                     <th>{{ 'plugin_coupon.admin.index.col09'|trans }}</th>
                                     <th>{{ 'plugin_coupon.admin.index.col10'|trans }}</th>
                                     <th>{{ 'plugin_coupon.admin.index.col11'|trans }}</th>
@@ -72,6 +75,9 @@
 
                                     <td>{{ Coupon.coupon_use_time|number_format }} / {{ Coupon.coupon_release|number_format }}</td>
                                     <td>{{ Coupon.coupon_lower_limit|price }}</td>
+                                    <td>{{ Coupon.products_together|number_format }}</td>
+                                    <td>{{ Coupon.purchase_limit|number_format }}</td>
+                                    <td>{{ Coupon.use_shop_limit|number_format }}</td>
                                     <td>{{ Coupon.available_from_date|date_format }} ～ {{ Coupon.available_to_date|date_format }}</td>
 
                                     <td><a href="{{ url('plugin_coupon_edit', { id: Coupon.id }) }}">{{ 'admin.common.edit'|trans }}</a></td>

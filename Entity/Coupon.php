@@ -146,6 +146,33 @@ class Coupon extends AbstractEntity
      */
     private $coupon_release;
 
+      /**
+     * The number of products bought together
+     *
+     * @var int
+     *
+     * @ORM\Column(name="products_together", type="integer", nullable=false)
+     */
+    private $products_together;
+
+    /**
+     * The limit by number of purchase
+     *
+     * @var int
+     *
+     * @ORM\Column(name="purchase_limit", type="integer", nullable=false)
+     */
+    private $purchase_limit;
+
+    /**
+     * The limit by number of times using shop
+     *
+     * @var int
+     *
+     * @ORM\Column(name="use_shop_limit", type="integer", nullable=false)
+     */
+    private $use_shop_limit;
+    
     /**
      * @var \DateTime
      *
@@ -577,5 +604,54 @@ class Coupon extends AbstractEntity
     public function setCouponRelease($coupon_release)
     {
         $this->coupon_release = $coupon_release;
+    }
+
+
+    /**
+     * @return int
+     */
+    public function getProductsTogether()
+    {
+        return $this->products_together;
+    }
+
+    /**
+     * @param int $products_together
+     */
+    public function setProductsTogether($products_together)
+    {
+        $this->products_together = $products_together;
+    }
+
+    /**
+     * @return int
+     */
+    public function getPurchaseLimit()
+    {
+        return $this->purchase_limit;
+    }
+
+    /**
+     * @param int $purchase_limit
+     */
+    public function setPurchaseLimit($purchase_limit)
+    {
+        $this->purchase_limit = $purchase_limit;
+    }
+
+    /**
+     * @return int
+     */
+    public function getUseShopLimit()
+    {
+        return $this->use_shop_limit;
+    }
+
+    /**
+     * @param int $use_shop_limit
+     */
+    public function setUseShopLimit($use_shop_limit)
+    {
+        $this->use_shop_limit = $use_shop_limit;
     }
 }

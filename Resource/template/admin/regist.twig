@@ -273,7 +273,6 @@
                                     {{ form_errors(form.coupon_cd) }}
                                 </div>
                             </div>
-
                             {# クーポン名 #}
                             <div class="row">
                                 <div class="col-3">
@@ -342,6 +341,30 @@
                                     {{ form_widget(form.coupon_lower_limit) }}
                                     {{ form_errors(form.coupon_lower_limit) }}
                                     <span id="coupon_lower_limit_description" class="small">{{ 'plugin_coupon.admin.regist.coupon_lower_limit.note'|trans }}</span>
+                                </div>
+                            </div>
+                             {# 同時購入制限 #}
+                            <div class="row">
+                                <div class="col-3">{{ form_label(form.products_together) }}</div>
+                                <div class="col mb-2">
+                                    {{ form_widget(form.products_together) }}
+                                    {{ form_errors(form.products_together) }}
+                                </div>
+                            </div>
+                            {# ショップ利用制限 #}
+                            <div class="row">
+                                <div class="col-3">{{ form_label(form.use_shop_limit) }}</div>
+                                <div class="col mb-2">
+                                    {{ form_widget(form.use_shop_limit) }}
+                                    {{ form_errors(form.use_shop_limit) }}
+                                </div>
+                            </div>
+                            {# 登録商品購入回数制限 #}
+                            <div class="row">
+                                <div class="col-3">{{ form_label(form.purchase_limit) }}</div>
+                                <div class="col mb-2">
+                                    {{ form_widget(form.purchase_limit) }}
+                                    {{ form_errors(form.purchase_limit) }}
                                 </div>
                             </div>
                             {# 有効期間 #}

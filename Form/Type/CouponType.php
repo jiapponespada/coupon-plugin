@@ -197,6 +197,39 @@ class CouponType extends AbstractType
                 ],
             ])
             ->add('coupon_use_time', HiddenType::class, [])
+            ->add('products_together', IntegerType::class, [
+                'label' => 'plugin_coupon.admin.label.products_together',
+                'required' => true,
+                'constraints' => [
+                    new Assert\NotBlank(),
+                    new Assert\Range([
+                        'min' => 1,
+                        'max' => 1000000,
+                    ]),
+                ],
+            ])
+            ->add('purchase_limit', IntegerType::class, [
+                'label' => 'plugin_coupon.admin.label.purchase_limit',
+                'required' => true,
+                'constraints' => [
+                    new Assert\NotBlank(),
+                    new Assert\Range([
+                        'min' => 1,
+                        'max' => 1000000,
+                    ]),
+                ],
+            ])
+            ->add('use_shop_limit', IntegerType::class, [
+                'label' => 'plugin_coupon.admin.label.use_shop_limit',
+                'required' => true,
+                'constraints' => [
+                    new Assert\NotBlank(),
+                    new Assert\Range([
+                        'min' => 1,
+                        'max' => 1000000,
+                    ]),
+                ],
+            ])
             ->add('CouponDetails', CollectionType::class, [
                 'entry_type' => CouponDetailType::class,
                 'allow_add' => true,

@@ -2,9 +2,9 @@
 plugin_coupon.admin.index.title: クーポン管理
 plugin_coupon.admin.index.subtitle: クーポン内容設定
 plugin_coupon.admin.index.number: <strong>%number% 件</strong> が該当しました
-plugin_coupon.admin.index.col01: クーポンID
-plugin_coupon.admin.index.col02: クーポンコード
-plugin_coupon.admin.index.col03: クーポン名
+plugin_coupon.admin.index.col01: ID
+plugin_coupon.admin.index.col02: コード
+plugin_coupon.admin.index.col03: 名前
 plugin_coupon.admin.index.col04: 種別
 plugin_coupon.admin.index.col05: 会員のみ
 plugin_coupon.admin.index.col06: 値引き
@@ -14,6 +14,9 @@ plugin_coupon.admin.index.col09: 有効期間
 plugin_coupon.admin.index.col10: 編集
 plugin_coupon.admin.index.col11: 状態
 plugin_coupon.admin.index.col12: 削除
+plugin_coupon.admin.index.col13: 同時購入数
+plugin_coupon.admin.index.col14: ショップ利用数
+plugin_coupon.admin.index.col15: 商品購入数
 plugin_coupon.admin.index.delete.confirm: このクーポンを削除しても宜しいですか？
 plugin_coupon.admin.coupon_member.yes: 会員のみ
 plugin_coupon.admin.coupon_member.no: なし
@@ -47,6 +50,9 @@ plugin_coupon.admin.label.discount_price: 値引き額(円)
 plugin_coupon.admin.label.discount_rate: 値引率(％)
 plugin_coupon.admin.label.coupon_release: 発行枚数
 plugin_coupon.admin.label.coupon_lower_limit: 下限金額(円)
+plugin_coupon.admin.label.products_together: 同時購入制限
+plugin_coupon.admin.label.use_shop_limit: ショップ利用制限
+plugin_coupon.admin.label.purchase_limit: 登録商品購入回数制限
 plugin_coupon.admin.label.available_from_date: 有効期間
 plugin_coupon.admin.label.available_to_date: 有効期間日(TO)
 plugin_coupon.admin.notfound: クーポンが存在しません。
